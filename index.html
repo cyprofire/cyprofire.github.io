@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    <style>
+        img {
+            height: 500px;
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        body {
+            background-color: brown;
+        }
+
+        .writing {
+            float: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="writing">
+            <h1>Grinding for your future or not??</h1>
+            <h3>No lies to yourself :)</h3>
+        </div>
+        <img src="bulb_off.jpg" alt="Off Bulb" id="myimage" onclick="clicked()" />
+    </div>
+    <script>
+        function clicked() {
+            var image = document.getElementById("myimage");
+            if (image.src.match("bulb_on.jpg"))
+                image.src = "bulb_off.jpg";
+            else
+                image.src = "bulb_on.jpg";
+        }
+    </script>
+</body>
+
+</html>
